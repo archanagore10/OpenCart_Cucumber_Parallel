@@ -88,3 +88,63 @@
 10:43:52.052 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on a searched  product
 10:43:53.175 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on add to cart button
 10:43:53.542 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - add to cart successful
+09:14:11.070 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - opening browser
+09:14:13.038 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - maximizing window
+09:14:13.227 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - opening browser
+09:14:13.374 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - opening browser
+09:14:13.502 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - opening browser
+09:14:14.340 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - searching a product
+09:14:14.520 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - maximizing window
+09:14:15.071 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - maximizing window
+09:14:15.078 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - maximizing window
+09:14:15.420 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on search button
+09:14:15.713 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on my account
+09:14:15.780 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on my account
+09:14:15.851 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - searching a product
+09:14:16.240 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on search button
+09:14:16.826 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on login
+09:14:16.871 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on login
+09:14:17.118 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  Username entered
+09:14:17.124 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  Username entered
+09:14:17.342 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  password entered
+09:14:17.352 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  password entered
+09:14:18.032 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on Login button
+09:14:18.046 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on Login button
+09:14:18.086 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - login successful
+09:14:18.090 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - login successful
+09:14:18.984 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on a searched  product
+09:14:19.614 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on a searched  product
+09:14:20.402 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on add to cart button
+09:14:21.034 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on add to cart button
+09:14:21.149 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - add to cart successful
+09:14:21.740 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - add to cart successful
+10:04:48.113 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - opening browser
+10:04:48.661 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - opening browser
+10:04:48.754 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - opening browser
+10:04:48.800 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - opening browser
+10:04:49.644 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - maximizing window
+10:04:50.346 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on my account
+10:04:50.357 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - maximizing window
+10:04:50.531 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - maximizing window
+10:04:50.916 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - maximizing window
+10:04:51.321 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on my account
+10:04:51.467 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on login
+10:04:51.670 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  Username entered
+10:04:51.736 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  password entered
+10:04:51.879 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on login
+10:04:52.013 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  Username entered
+10:04:52.060 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks -  password entered
+10:04:52.114 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - searching a product
+10:04:52.180 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on Login button
+10:04:52.222 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - login successful
+10:04:52.251 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - searching a product
+10:04:52.309 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on search button
+10:04:52.441 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on search button
+10:04:52.539 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - clicked on Login button
+10:04:52.587 [TestNG-PoolService-0] INFO  parallelHooks.MyHooks - login successful
+10:04:55.206 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on a searched  product
+10:04:55.251 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on a searched  product
+10:04:56.616 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on add to cart button
+10:04:56.657 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - clicking on add to cart button
+10:04:56.966 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - add to cart successful
+10:04:57.018 [TestNG-PoolService-1] INFO  parallelHooks.MyHooks - add to cart successful

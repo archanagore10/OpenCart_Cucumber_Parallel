@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.645" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="login functionality" name="Successful login with valid credentials - Example #1.1" time="9.583">
+<testsuite name="Cucumber" time="14.828" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Search product functionality" name="searching a product - Example #1.1" time="14.634">
+<system-out><![CDATA
+
+Given user is on Home page..................................................passed
+When user search a "iPhone".................................................passed
+And clicks on the "iPhone"..................................................passed
+And adds it to the cart.....................................................passed
+Then add to cart is successful..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login functionality" name="Successful login with valid credentials - Example #1.1" time="10.794">
 <system-out><![CDATA[
 Given user is on Home page..................................................passed
 And user clicks on Login after navigating to My Account menu................passed
 And user enters "admin123@gmail.com" and "admin@123"........................passed
 And click on login button...................................................passed
 Then user navigates to My Account page......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Search product functionality" name="searching a product - Example #1.1" time="11.629">
-<system-out><![CDATA[
-Given user is on Home page..................................................passed
-When user search a "iPhone".................................................passed
-And clicks on the "iPhone"..................................................passed
-And adds it to the cart.....................................................passed
-Then add to cart is successful..............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
