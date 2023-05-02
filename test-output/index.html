@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,36 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.ParallelRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful login with valid credentials&quot;, &quot;login functionality&quot;)">runScenario("Successful login with valid credentials", "login functionality")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="runner.ParallelRunner" class="method navigator-link" hash-for-method="runScenario(&quot;searching a product&quot;, &quot;Search product functionality&quot;)">runScenario("searching a product", "Search product functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="runner.ParallelRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful login with valid credentials&quot;, &quot;login functionality&quot;)">runScenario("Successful login with valid credentials", "login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runner.ParallelRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful login with valid credentials&quot;, &quot;login functionality&quot;)">runScenario("Successful login with valid credentials", "login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="runner.ParallelRunner" class="method navigator-link" hash-for-method="runScenario(&quot;searching a product&quot;, &quot;Search product functionality&quot;)">runScenario("searching a product", "Search product functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -133,18 +133,72 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runner.ParallelRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;searching a product&quot;, &quot;Search product functionality&quot;)">
+                  </a> <!-- runScenario("searching a product", "Search product functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("searching a product","Search product functionality")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:42)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:257)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:46)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:42)
+	at parallelHooks.MyHooks.setup(MyHooks.java:59)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Successful login with valid credentials&quot;, &quot;login functionality&quot;)">
                   </a> <!-- runScenario("Successful login with valid credentials", "login functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Successful login with valid credentials","login functionality")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/. The latest version can be downloaded from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.edge.EdgeDriverService.access$000(EdgeDriverService.java:42)
+	at org.openqa.selenium.edge.EdgeDriverService$Builder.findDefaultExecutable(EdgeDriverService.java:257)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:46)
+	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:42)
+	at parallelHooks.MyHooks.setup(MyHooks.java:59)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful login with valid credentials&quot;, &quot;login functionality&quot;)">
+                  </a> <!-- runScenario("Successful login with valid credentials", "login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful login with valid credentials","login functionality")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
+	at parallelHooks.MyHooks.setup(MyHooks.java:69)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -155,32 +209,24 @@
                   </a> <!-- runScenario("searching a product", "Search product functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("searching a product","Search product functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Successful login with valid credentials&quot;, &quot;login functionality&quot;)">
-                  </a> <!-- runScenario("Successful login with valid credentials", "login functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Successful login with valid credentials","login functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;searching a product&quot;, &quot;Search product functionality&quot;)">
-                  </a> <!-- runScenario("searching a product", "Search product functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("searching a product","Search product functionality")</span>
+                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
+	at parallelHooks.MyHooks.setup(MyHooks.java:69)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -255,24 +301,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.ParallelRunner')
-data.setCell(0, 3, 9613);
+data.setCell(0, 3, 679);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.ParallelRunner')
-data.setCell(1, 3, 6889);
+data.setCell(1, 3, 678);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.ParallelRunner')
-data.setCell(2, 3, 4974);
+data.setCell(2, 3, 173);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.ParallelRunner')
-data.setCell(3, 3, 4271);
+data.setCell(3, 3, 169);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -304,40 +350,48 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@1eb9d69a)</span>
-                <span class="method-start">18 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@301aa982)</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Successful login with valid credentials", "login functionality")</span>
-                <span class="method-start">536 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("searching a product", "Search product functionality")</span>
+                <span class="method-start">531 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("searching a product", "Search product functionality")</span>
-                <span class="method-start">4810 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Successful login with valid credentials", "login functionality")</span>
+                <span class="method-start">532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">11701 ms</span>
+                <span class="method-start">1215 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@5fc930f0)</span>
+                <span class="method-start">1472 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="configuration-test before">
                 <span class="method-name">defineBrowser(firefox)</span>
-                <span class="method-start">11995 ms</span>
+                <span class="method-start">1472 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@36511772)</span>
-                <span class="method-start">11996 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Successful login with valid credentials", "login functionality")</span>
-                <span class="method-start">12010 ms</span>
+                <span class="method-start">1487 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("searching a product", "Search product functionality")</span>
-                <span class="method-start">16986 ms</span>
+                <span class="method-start">1487 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">26602 ms</span>
+                <span class="method-start">1661 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

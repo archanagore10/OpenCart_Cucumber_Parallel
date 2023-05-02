@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.598" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="login functionality" name="Successful login with valid credentials - Example #1.1" time="4.971">
+<testsuite name="Cucumber" time="0.179" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="login functionality" name="Successful login with valid credentials - Example #1.1" time="0.16">
+<failure type="java.lang.IllegalStateException" message="The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases">
+<![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:101)
+	at parallelHooks.MyHooks.setup(MyHooks.java:69)
+]]>
+</failure>
 <system-out><![CDATA[
-Given user is on Home page..................................................passed
-And user clicks on Login after navigating to My Account menu................passed
-And user enters "admin123@gmail.com" and "admin@123"........................passed
-And click on login button...................................................passed
-Then user navigates to My Account page......................................passed
+Given user is on Home page..................................................skipped
+And user clicks on Login after navigating to My Account menu................skipped
+And user enters "admin123@gmail.com" and "admin@123"........................skipped
+And click on login button...................................................skipped
+Then user navigates to My Account page......................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Search product functionality" name="searching a product - Example #1.1" time="9.607">
+<testcase classname="Search product functionality" name="searching a product - Example #1.1" time="0.164">
+<failure type="java.lang.IllegalStateException" message="The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases">
+<![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:101)
+	at parallelHooks.MyHooks.setup(MyHooks.java:69)
+]]>
+</failure>
 <system-out><![CDATA[
-Given user is on Home page..................................................passed
-When user search a "iPhone".................................................passed
-And clicks on the "iPhone"..................................................passed
-And adds it to the cart.....................................................passed
-Then add to cart is successful..............................................passed
+Given user is on Home page..................................................skipped
+When user search a "iPhone".................................................skipped
+And clicks on the "iPhone"..................................................skipped
+And adds it to the cart.....................................................skipped
+Then add to cart is successful..............................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

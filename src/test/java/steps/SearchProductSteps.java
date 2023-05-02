@@ -83,7 +83,7 @@ public class SearchProductSteps{
 		} else {
 			System.out.println("success message:" + context.getSp().verifySuccessMsg());
 			
-			context.getLogger().info("add to cart unsuccessful");
+			context.getLogger().error("add to cart unsuccessful");
 			Assert.assertTrue(false);
 		}
 		// driver.quit();
